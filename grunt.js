@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   process.env.NODE_ENV = "development";
 
   // Project configuration.
+
   grunt.initConfig({
     pkg: '<json:package.json>',
     coffeelint: {
@@ -17,19 +18,25 @@ module.exports = function(grunt) {
       unit: {
         options: {
           reporter: 'spec',
-          compilers: 'coffee:coffee-script'        
+          compilers: 'coffee:coffee-script',
+          // Kue depends on a leaky library
+          ignoreLeaks: true
         }
       },
       component: {
         options: {
           reporter: 'spec',
-          compilers: 'coffee:coffee-script'        
+          compilers: 'coffee:coffee-script',
+          // Kue depends on a leaky library
+          ignoreLeaks: true
         }
       },
       integration: {
         options: {
           reporter: 'spec',
-          compilers: 'coffee:coffee-script'        
+          compilers: 'coffee:coffee-script',
+          // Kue depends on a leaky library
+          ignoreLeaks: true
         }
       }
     },
