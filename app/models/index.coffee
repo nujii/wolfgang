@@ -1,5 +1,5 @@
 init = (model)->
   require "./#{model}"
 
-init "notification"
+init "publication"
 init "subscription"
