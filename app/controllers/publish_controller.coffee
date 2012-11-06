@@ -1,10 +1,11 @@
 {Controller} = require "locomotive"
-Notification = require "../models/notification"
+Publication = require "../models/publication"
 util = require "../../lib/util"
 module.exports = exports = new Controller()
 
 # #Actions
 exports.index = ->
+  @res.set "Cache-Control", "max-age=604800, public"
   @render format: "json"
 
 exports.publish = ->
@@ -12,5 +13,5 @@ exports.publish = ->
 
 exports.before "publish", (next)->
   body = util.assign @req.body, ["uri", "action", "etag", "last-modified"]
-  Notification.create body, (err)->
+  Publication.create body, (err)->
     next err
