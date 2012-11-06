@@ -1,0 +1,4 @@
+@collection ->
+  @href urlFor()
+
+  @link link for link in globalLinks

@@ -1,0 +1,14 @@
+@collection ->
+  @href urlFor()
+
+  @link link for link in globalLinks
+
+  @template ->
+    @datum name: "uri", prompt: "URI"
+    @datum name: "action", prompt: "Action", multiple: false, options: [
+      value: "UPDATED", prompt: "Updated"
+    ,
+      value: "DELETED", prompt: "Deleted"
+    ]
+    @datum name: "etag", prompt: "Etag"
+    @datum name: "last-modified", prompt: "Last Modified"

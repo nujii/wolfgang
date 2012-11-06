@@ -1,0 +1,46 @@
+{
+  "name": "wolfgang",
+  "description": "Webhook Server",
+  "version": "0.0.0",
+  "main": "start.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Nujii Labs L.L.C.",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nujii/wolfgang.git"
+  },
+  "scripts": {
+    "start": "node start",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "coffee-script": "~1.4.0",
+    "cscj": "~0.0.1",
+    "express": "3.x.x",
+    "experiment": "https://github.com/fs-webdev/experiment/archive/master.tar.gz",
+    "resourceful": "~0.3.2",
+    "locomotive": "https://github.com/djensen47/locomotive/archive/master.tar.gz",
+    "passport": "~0.1.12",
+    "passport-local": "~0.1.6",
+    "passport-http-bearer": "~0.2.0",
+    "underscore": "~1.4.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.3.2",
+    "should": "~1.1.0",
+    "collection-json": "~0.2.0",
+    "supertest": "~0.4.0",
+    "coffeelint": "~0.5.2",
+    "grunt": "~0.3.17",
+    "grunt-mocha-test": "~0.0.1",
+    "grunt-coffeelint": "~0.0.3",
+    "grunt-shell": "~0.1.3"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
+}

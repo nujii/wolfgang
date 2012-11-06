@@ -1,0 +1,8 @@
+@collection ->
+  @href urlFor()
+
+  @link link for link in globalLinks
+
+  @template ->
+    @datum name: "uri", prompt: "URI"
+    @datum name: "callback", prompt: "Callback"
