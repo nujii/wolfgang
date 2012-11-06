@@ -1,5 +1,4 @@
 request = require "supertest"
-_ = require "underscore"
 should = require "should"
 process.env.NODE_ENV = "development"
 app = null

@@ -13,4 +13,4 @@ module.exports.on "save", (publication)->
   job =
     title: publication.uri
     uri: publication.uri
-  publications.create("publication", job).save();
+  publications.create("publication", job).save()
