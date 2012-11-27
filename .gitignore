@@ -1,0 +1,8 @@
+*.beam
+.eunit
+deps/*
+apps/wolfgang/ebin
+*~
+dev/*
+doc/*
+rel/wolfgang
